@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ТЕЙЯ</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+
+</head>
+<body>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+    <div class="container-fluid">
+        <header>
+            <div class="row align-items-center d-flex justify-content-between">
+                <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-3 col-sm-1 d-flex " style="padding-top: 80px;">
+                    <img src="img/Логотип.svg" alt="">
+                </div>
+                <div class=" d-flex justify-content-between fw-regular" style="padding-top: 80px; font-size: 2vw; font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;">
+                    <input id="menu-toggle" type="checkbox" />
+                    <label class="menu-btn" for="menu-toggle">
+                      <span></span>
+                    </label>
+                    <ul class="menubox">
+                            <li><a class="menu-item" href="#halls">ЗАЛЫ</a></li>
+                            <li><a class="menu-item" href="#stocks">АКЦИИ</a></li>
+                            <li><a class="menu-item" href="#photo">ФОТОГАЛЕРЕЯ</a></li>
+                            <li><a class="menu-item" href="#contacts">КОНТАКТЫ</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+        </header>
+            <div class="row1" style="padding-top: 40%;">
+                <div class="promo col-xxl-6 col-xl-6 col-lg-6 col-md-7 col-sm-12 text-white d-flex justify-content-end fw-medium " style="letter-spacing: 0.4px;  text-transform: uppercase; font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;">
+                        -50% на первое посещение по промокоду «водолей»
+                </div>
+            </div>
+            <div class="row2 align-items-center" style="padding-bottom: 50px;">
+                <div class="art col-xxl-6 col-xl-6 col-lg-6 col-md-7 col-sm-12 d-flex justify-content-end" style=" letter-spacing: 1.92px;
+                text-transform: uppercase; font-family: Roboto;">
+                    <p class="text-white fw-medium">арт фотостудия</p>
+                </div>
+                <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-2 col-sm-6 d-flex justify-content-end align-items-center ">
+                 
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                        забронировать <img src="img\ARROW.svg" style="padding-left: 18px;" alt="">
+                    </button>
+                    
+              
+                    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog">
+                        <form class="modal-content needs-validation was-validated" novalidate="">
+                            <div class="modal-header">
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <h1 class="d-flex justify-content-center mb-0" style="color: #000; font-family: Roboto; font-size: 4vw; font-style: normal; font-weight: 400; padding-bottom: 37px;">Забронировать зал</h1>
+                                <p class=" txtt d-flex justify-content-center mb-0 " >Заполните форму для вашей заявки и мы ответим вам </p>
+                                <p class=" txtt d-flex justify-content-center" style="padding-bottom: 10px;">в ближайщее время</p>
+                                <div class=" d-flex justify-content-center flex-column">
+                                  <label for="validationCustom01" class="form-label" style="font-size: 3vw;">ВАШЕ ИМЯ</label>
+                                  <input type="text" class="form-control" id="validationCustom01" value="" required style="margin-bottom: 25px;">
+                                </div>
+                                <div class="">
+                                  <label for="validationCustom02" class="form-label" style="font-size: 3vw;">НОМЕР ТЕЛЕФОНА</label>
+                                  <input type="text" class="form-control" id="validationCustom02" value="" required style="margin-bottom: 25px;" >
+                                </div>
+                                <div class="">
+                                    <label for="validationCustom03" class="form-label"style="font-size: 3vw;" >E-MAIL</label>
+                                    <input type="text" class="form-control" id="validationCustom03" value="" required style="margin-bottom: 25px;">
+                                </div>
+                                <div class="">
+                                  <div class="form-check">
+                                    <input class="form-check-input" style="width: 5vw;
+                                    height: 5vw" type="checkbox" value="" id="invalidCheck" required>
+                                    <label class="form-check-label " style="padding-left: 10px; font-size: 2vw;" for="invalidCheck">
+                                      Agree to terms and conditions
+                                    </label>
+                                    <div class="invalid-feedback" style="padding-left: 20px; font-size: 2vw;">
+                                      You must agree before submitting.
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="modal-footer">
+                                    <button class="btn btn-primary " style="border-color: #111; color: #111; margin-top: 30px;" type="submit"><ya-tr-span data-index="79-0" data-translated="true" data-source-lang="en" data-target-lang="ru" data-value="Submit form" data-translation="Отправить форму" data-ch="0" data-type="trSpan" data-selected="false">Отправить форму</ya-tr-span></button>
+                                </div>
+                            </div>
+                        </form>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+
+        <section>
+            <div class="container">
+                <div class=" flex-wrap row d-flex justify-content-between align-items-center" style="padding-top: 150px;">
+                    <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-12 col-sm-12">
+                        <h1 class="tx" id="halls">залы</h1>
+                    </div>
+                    <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-12 col-sm-12">
+                        <p class="info">5 залов в разных стилях, оснащенные новым профессиональным оборудованием</p>
+                    </div>
+                    <hr>
+                </div>
+    
+                <div class="row flex-wrap d-flex justify-content-between " style="padding-top: 45px;">
+                    <div class="col-xxl-5 col-xl-5 col-lg-5 col-md-12 col-sm-12">
+                        <h2 class="h2 pb-5">контент</h2>
+                        <p class="txt">Светлый зал с хорошим естественным освещением, идеален для контентной, каталожной, тематической, предметной съемок, съемки личного бренда и бизнес-съемок.</p>
+                        <p class="txt">Диваны, кресла, стулья, монстеры, ширма, большое зеркало и тд.</p>
+                        <p class="txt1">Стоимость</p>
+                        <p class="txt2">1 час — 1500₽ </p>
+                        <p class="txt2">2 час — 2500₽ </p>
+                        <p class="txt2">3 час — 3000₽ </p>
+                        <p class="txt2">От 3-х часов аренды 1000₽/час </p>
+                        <p class="txt3">Одно наполнение ванны водой — 1000₽, сообщать необходимо заранее</p>
+                    </div>
+    
+                    <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-12 col-sm-12">
+                        <div class="img-2">
+                            <img src="img\image 2.jpg"  alt="">
+                        </div>
+                        
+                        <div class="d-flex justify-content-between" style="padding-top: 23px; padding-bottom: 45px;">
+                            <img src="img\image 4.jpg" class="img3" alt="">
+                            <img src="img\image 5.jpg" class="img3" alt="">
+                            <img src="img\image 6.jpg" class="img3" alt="">
+                            <img src="img\image 7.jpg" class="img3" alt="">
+                            <img src="img\image 8.jpg" class="img3" alt="">
+                        </div>
+                    </div>
+                    <hr>
+                </div>
+    
+    
+                
+                <div class="row d-flex justify-content-between " style="padding-top: 45px;">
+                    <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-12 col-sm-12">
+                        <div class="img-2">
+                            <img src="img\image 21.jpg"  alt="">
+                        </div>
+                        <div class="d-flex justify-content-between" style="padding-top: 23px; padding-bottom: 45px;">
+                            <img src="img\image 3.jpg" class="img3" alt="">
+                            <img src="img\image 41.jpg" class="img3" alt="">
+                            <img src="img\image 51.jpg" class="img3" alt="">
+                            <img src="img\image 61.jpg" class="img3" alt="">
+                            <img src="img\image 71.jpg" class="img3" alt="">
+                        </div>
+                    </div>
+                    <div class="col-xxl-5 col-xl-5 col-lg-5 col-md-12 col-sm-12">
+                        <h2 class="h2 pb-5">дождь</h2>
+                        <p class="txt">Это большая площадка для АКВАСЪЕМКИ.Зал оборудован системами, с помощью которых можно создавать крутые кадры с водой.</p>
+                        <p class="txt">Много бесплатного реквизита: зонты, дождевики, сигнальные ленты, конусы, бочка, вейкборд, надувной фламинго и тд.</p>
+                        <p class="txt">Мотоцикл, шлем и джерси — 1000₽/час..</p>
+                        <p class="txt1">Стоимость</p>
+                        <p class="txt2">1 час — 3000₽ </p>
+                        <p class="txt2">2 час — 5000₽ </p>
+                        <p class="txt2">3 час — 6000₽ </p>
+                        <p class="txt2">От 3-х часов аренды 2000₽/час </p>
+                        <p class="txt4">Танцевальные группы от 10 человек — аренда от 2-х часов, </p>
+                        <p class="text5">от 15 человек — от 3-х часов.</p>
+                    </div>
+                    <hr>
+                </div>
+                <div class="row d-flex justify-content-between " style="padding-top: 45px;">
+                    <div class="col-xxl-5 col-xl-5 col-lg-5 col-md-12 col-sm-12">
+                        <h2 class="h2 pb-5">Циклорама</h2>
+                        <p class="txt">Белоснежная угловая циклорама, ровная и чистая! Идеальна для коммерческих съемок, маркетплейсов и любой творческой задумки.</p>
+                        <p class="txt1">Стоимость</p>
+                        <p class="txt2">1 час — 2000₽ </p>
+                        <p class="txt2">2 час — 3000₽ </p>
+                        <p class="txt2">3 час — 4000₽ </p>
+                        <p class="txt2">От 4-х часов аренды 1250₽/час </p>
+                        <p class="txt3">Специальные условия для предпринимателей.</p>
+                    </div>
+                    <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-12 col-sm-12">
+                        <div class="img-2">
+                            <img src="img\image 22.jpg"  alt="">
+                        </div>
+                        <div class="d-flex justify-content-between" style="padding-top: 23px; padding-bottom: 45px;">
+                            <img src="img\image 32.jpg" class="img3" alt="">
+                            <img src="img\image 52.jpg" class="img3" alt="">
+                            <img src="img\image 62.jpg" class="img3" alt="">
+                            <img src="img\image 72.jpg" class="img3" alt="">
+                            <img src="img\image 82.jpg" class="img3" alt="">
+                        </div>
+                    </div>
+                    <hr>
+                </div>
+                <div class="row d-flex justify-content-between " style="padding-top: 45px;">
+                    <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-12 col-sm-12">
+                        <div class="img-2">
+                            <img src="img\image 23.jpg"  alt="">
+                        </div>
+                        <div class="d-flex justify-content-between" style="padding-top: 23px; padding-bottom: 45px;">
+                            <img src="img\image 33.jpg" class="img3" alt="">
+                            <img src="img\image 43.jpg" class="img3" alt="">
+                            <img src="img\image 53.jpg" class="img3" alt="">
+                            <img src="img\image 73.jpg" class="img3" alt="">
+                            <img src="img\image 83.jpg" class="img3" alt="">
+                        </div>
+                    </div>
+                    <div class="col-xxl-5 col-xl-5 col-lg-5 col-md-12 col-sm-12">
+                        <h2 class="h2">Интерьерный</h2>
+                        <h3 class="txt1 pb-5">Конференц-зал</h3>
+                        <p class="txt">Зал в винтажном классическом стиле с тремя фото локациями.</p>
+                        <p class="txt">Отличный вариант для свадебных фотосессий.</p>
+                        <p class="txt">Большое пространство для ваших конференций, обучений и мастер-классов. Огромная зеркальная стена идеальна для любых групповых занятий.</p>
+                        <p class="txt1">Стоимость</p>
+                        <p class="txt2">1 час — 2000₽ </p>
+                        <p class="txt2">2 час — 3000₽ </p>
+                        <p class="txt2">3 час — 4000₽ </p>
+                        <p class="txt2">От 4-х часов аренды 1250₽/час </p>
+                        <p class="txt4">Аренда под мероприятия и занятия на специальных условиях. </p>
+                    </div>
+                    <hr>
+                </div>
+                <div class="row d-flex justify-content-between " style="padding-top: 45px;">
+                    <div class="col-xxl-5 col-xl-5 col-lg-5 col-md-12 col-sm-12">
+                        <h2 class="h2">Лофт</h2>
+                        <p class="txt ">Зал в стиле лофт с красивым естественным освещением! Место для создания стильных фото/видео кадров.</p>
+                        <p class="txt">Есть свой отдельный вход и зона раздевалки. Зал подходит для создания комьюнити с рабочими местами, в уютной атмосфере.</p>
+                        <p class="txt">Высокоскоростной wi-fi и кофе-машина, проектор для тебя или твоей творческой группы.</p>
+                        <p class="txt1">Стоимость</p>
+                        <p class="txt2">1 час — 1500₽ </p>
+                        <p class="txt2">2 час — 2500₽ </p>
+                        <p class="txt2">3 час — 3000₽ </p>
+                        <p class="txt2">От 4-х часов аренды 1250₽/час </p>
+                        <p class="txt3">Мастер-классы, интервью, обучение, коворкинг на специальных условиях.</p>
+                    </div>
+                    <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-12 col-sm-12">
+                        <div class="img-2">
+                            <img src="img\image 39.jpg"  alt="">
+                        </div>
+                        <div class="d-flex justify-content-between" style="padding-top: 23px; padding-bottom: 45px;">
+                            <img src="img\image 34.jpg" class="img3" alt="">
+                            <img src="img\image 44.jpg" class="img3" alt="">
+                            <img src="img\image 54.jpg" class="img3" alt="">
+                            <img src="img\image 74.jpg" class="img3" alt="">
+                            <img src="img\image 84.jpg" class="img3" alt="">
+                        </div>
+                    </div>
+                    <hr>
+                </div>
+            </div>
+        </section>
+        
+        
+        <section>
+            <div class="container">
+                <div class="row tx" style="padding-top: 150px;padding-bottom: 22px; " id="stocks">акции</div>
+                <div class="row flex-wrap d-flex justify-content-between align-items-center" style="border-radius: 10px; background-color: #111;height: 100%; color: #FFF; font-family: Roboto; font-size: 4vw; font-style: normal; font-weight: 400; letter-spacing: 0.72px; text-transform: uppercase; ">
+                    <div class="col-xxl-6  col-xl-6 col-lg-12 col-md-12 col-sm-12 d-flex justify-content-center align-items-center" style="padding-left: 20px; font-size: 36px;">
+                        <p class="text-white">На первое посещение студии скидка 50% по промокоду «ВОДОЛЕЙ»</p>
+                    </div>
+                    <div class="col-xxl-4 col-xl-4 col-lg-12 col-md-12 col-sm-12  d-flex justify-content-end align-items-center">
+                        <button type="button" class="btn btn-primary" id="liveToastBtn">забронировать</button>
+    
+                        <div class="toast-container position-fixed bottom-0 end-0 p-3">
+                            <div id="liveToast" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+                                <div class="toast-header">
+                                <strong class="me-auto" style="font-size: 24px;">СТЕЙЯ</strong>
+                                <small>сейчас</small>
+                                <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+                                </div>
+                                <div class="toast-body" style="color: #111;">
+                                Ваша заявка отправлена. Мы ответим вам в ближайщее время
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row flex-wrap d-flex justify-content-between align-items-center" style="padding-top: 150px;">
+                    <div class="col-xxl-3 col-xl-3 col-lg-12 col-md-12 col-sm-12 tx1">для фотографов и видеографов</div>
+                    <div class="col-xxl-7 col-xl-7 col-lg-12 col-md-12 col-sm-12">
+                        <div class="accordion accordion-flush" id="accordionFlushExample">
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                                    100 000₽ за лучшую работу года
+                                </button>
+                                </h2>
+                                <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                                <div class="accordion-body txt">
+                                    <p>Ежемесячно в нашей фотостудии проходит конкурс «лучшее фото месяца» по итогам которого мы определяем победителей и награждаем их бесплатными часами аренды нашей студии.</p>
+                                    <p>Фотографы, занявшие первые места, попадают в список участников годового розыгрыша на закрытую вечеринку, где мы разыгрываем депозит в нашу студию на 100 000₽.</p>
+                                    <p>ВАЖНО:</p>
+                                    <p>1. Участвовать можно каждый месяц, заявки принимаются до 15 числа каждого месяца</p>
+                                    <p>2. Можно присылать несколько фото, если на съемке были разные образы/модели и если съемок было несколько</p>
+                                    <p>3. Голосование проходит в Inatagram и в VK, голосовать могут только реальные подписчики нашего и вашего аккаунтов. Накрутка голосов исключена, влечет за собой дисквалификацию.</p>
+                                    <p>4. Ежемесячные призы получают и фотографы и модели, при этом использование приза не привязывает вас друг к другу.</p>
+                                    
+                                </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                                    Система депозитов
+                                </button>
+                                </h2>
+                                <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                                <div class="accordion-body txt">
+                                    <p>Для постоянных фотографов и видеографов мы предоставляем особые условия на аренду и услуги нашей фотостудии.</p>
+                                    <p>Депозит на 10 000₽ предоставляет скидку 10% на весь общий прайс и скидку 5% на пакеты часов.</p>
+                                    <p>Депозит на 20 000₽ предоставляет скидку 20% на весь общий прайс и скидку 7% на пакеты часов.</p>
+                                    <p>НАПРИМЕР:</p>
+                                    <p>1 час аренды зала «Дождь» по прайсу 3000₽ - 30% = 2100₽</p>
+                                    <p>пакет на 3 часа аренды зала «Дождь» по прайсу 6000₽ - 10% = 5400₽ (1800₽/час вместо 2000₽/час)</p>
+                                    <p>*Если студию оплачивает ваш клиент, то мы просто компенсируем обратно в депозит сумму скидки.</p>
+                                    <p>*Депозит действует 3 месяца с первой съемки.</p>
+                                </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                                    Кэшбэк
+                                </button>
+                                </h2>
+                                <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                                <div class="accordion-body txt ">
+                                    <p>Система лояльности для активных фотографлов и видеографов. 20% кэшбек «активным» за любую съемку от 5 броней в месяц.</p>
+                                    <p>*Если было от 5 съемок за текущий месяц, зачисление кэшбэка происхдит по итогам месяца, каждого 1 числа нового месяца. Использовать кэшбэк можно для любой последующей съемки.</p>
+                                    
+                                </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour">
+                                    Кэшбэк «Коммерция»
+                                </button>
+                                </h2>
+                                <div id="flush-collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                                <div class="accordion-body txt">
+                                    <p>Система лояльности для активных фотографлов и видеографов, сотрудничающих с маркетплейсами и любыми коммерческими организациями.</p>
+                                    <p>10% кэшбэк «коммерция».</p>
+                                    <p>Подробности уточняйте у администратора.</p>
+                                </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row d-flex justify-content-between align-items-center" style="padding-top: 150px;">
+                    <div class="col-xxl-3 col-xl-3 col-lg-12 col-md-12 col-sm-12 tx1">для клиентов</div>
+                    <div class="col-xxl-7 col-xl-7 col-lg-12 col-md-12 col-sm-12">
+                        <div class="accordion accordion-flush" id="accordionFlushExample">
+                          <div class="accordion-item">
+                            <h2 class="accordion-header" id="flush-headingFive">
+                              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFive" aria-expanded="true" aria-controls="flush-collapseFive">
+                                Система скидок для коммерческих проектов
+                              </button>
+                            </h2>
+                            <div id="flush-collapseFive" class="accordion-collapse collapse" aria-labelledby="flush-headingFive" data-bs-parent="#accordionFlushExample">
+                              <div class="accordion-body txt">
+                                <p>Первый пробный час предоставляется бесплатно.</p>
+                                <p>При единоразовой оплате депозита на 20 часов — стоимость аренды зала 1000₽/час, то есть 20 000₽.</p>
+                                <p>*Использовать часы можно в разные дни, во всех залах, кроме зала «Дождь».</p>
+                                <p class="tx2">Клиентам, нацеленным на долгосрочные взаимовыгодные отношения, которым не подходит система депозита, предоставляем фиксированную сумму 1250₽/час при бронировании от 4-х часов 1200₽/час.</p>
+                                <p>*Оплата может совершаться на Р/С — нужно предоставить подтверждающие документы.</p>
+                              </div>
+                            </div>
+                          </div>
+                          
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div class="container">
+                <div class="row tx" style="padding-top: 300px;" id="photo">
+                    фотогалерея
+                </div>
+                <div class="row d-flex justify-content-center" style="padding-top: 150px;">
+                    <div class="col-xxl-10 col-xl-10 col-lg-10 col-md-10 col-sm-10">
+                        <div id="carouselExample" class="carousel slide">
+                            <div class="carousel-inner">
+                              <div class="carousel-item active">
+                                <img src="img\слайдер1.jpg" class="d-block w-100" alt="...">
+                              </div>
+                              <div class="carousel-item">
+                                <img src="img\слайдер2.jpg" class="d-block w-100" alt="...">
+                              </div>
+                              <div class="carousel-item">
+                                <img src="img\слайдер3.jpg" class="d-block w-100" alt="...">
+                              </div>
+                              <div class="carousel-item">
+                                <img src="img\слайдер4.jpg" class="d-block w-100" alt="...">
+                              </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                              <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                              <span class="visually-hidden">Next</span>
+                            </button>
+                          </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+         <footer>
+            <div class="row d-flex justify-content-between align-items-center " style="padding-top: 300px; width: 100%;" id="contacts">
+                <div class=" d-flex justify-content-between align-items-center" style="padding-bottom: 35px;">
+                    <div class="col-xxl-6 col-lg-6 col-md-6 col-sm-6 "><img src="img\ЛОГОТИП1.svg" style="width: 98%;" alt=""></div>
+                    <div class="col-xxl-4 col-lg-6 col-md-6 col-sm-6 d-flex justify-content-end align-items-center" style="color: var(--, #111);font-family: Roboto;font-size: 3vw;font-style: normal;font-weight: 500; letter-spacing: 1.28px; text-transform: uppercase;">арт фотостудия</div>
+                </div>
+                <hr>
+            </div>
+            <div class="row d-flex justify-content-between" style="padding-top: 50px; width: 98%;">
+                <div class="col-xxl-3 col-xl-3 col-lg-2 col-md-12 col-sm-12" style="margin-bottom: 50px;" >
+                    <p style="color: var(--, #111);font-family: Roboto;font-size: 16px;font-style: normal;font-weight: 600;letter-spacing: 0.32px;">Адрес фотостудии</p>
+                    <p style="color: var(--, #111);font-family: Roboto;font-size: 16px;font-style: normal;font-weight: 400;letter-spacing: 0.32px;">Нижний Новгород, улица Нестерова, 22</p>
+                    <p style="color: var(--, #111);font-family: Roboto;font-size: 16px;font-style: normal;font-weight: 600;letter-spacing: 0.32px; padding-bottom: 20px;">+7 (987) 394-58-31</p>
+                </div>
+                <div class="col-xxl-3 col-xl-3 col-lg-2 col-md-12 col-sm-12">
+                    <p style="color: var(--, #111);font-family: Roboto;font-size: 16px;font-style: normal;font-weight: 600;letter-spacing: 0.32px;text-transform: uppercase;">Как добраться</p>
+                    <p style="color: var(--, #111);font-family: Roboto;font-size: 16px;font-style: normal;font-weight: 400;letter-spacing: 0.32px;">В навигаторе набирайте Тейя, приведет с нужной стороны, с Большой Печерской. Ориентир ресторан АМО, мы их соседи.Если забьете ул. Нестерова, д.22, то приведет с другой стороны. Придется обходить дом.</p>
+                </div>
+                <div class="col-xxl-1 col-xl-1 col-lg-1 col-md-12 col-sm-12">
+                    <p style="color: var(--, #111);font-family: Roboto;font-size: 16px;font-style: normal;font-weight: 600;letter-spacing: 0.32px;">Навигация</p>
+                    <p style="color: var(--, #111);font-family: Roboto;font-size: 16px;font-style: normal;font-weight: 400;letter-spacing: 0.32px;text-transform: uppercase;">Залы</p>
+                    <p style="color: var(--, #111);font-family: Roboto;font-size: 16px;font-style: normal;font-weight: 400;letter-spacing: 0.32px;text-transform: uppercase;">о студии</p>
+                </div>
+                <div class="col-xxl-1 col-xl-1 col-lg-1 col-md-12 col-sm-12">
+                    <p style="color: var(--, #111);font-family: Roboto;font-size: 16px;font-style: normal;font-weight: 600;letter-spacing: 0.32px;">Социальные сети</p>
+                    <p style="color: var(--, #111);font-family: Roboto;font-size: 16px;font-style: normal;font-weight: 400;letter-spacing: 0.32px;text-transform: uppercase;">telegram</p>
+                    <p style="color: var(--, #111);font-family: Roboto;font-size: 16px;font-style: normal;font-weight: 400;letter-spacing: 0.32px;text-transform: uppercase;">вконтакте</p>
+                    <p style="color: var(--, #111);font-family: Roboto;font-size: 16px;font-style: normal;font-weight: 400;letter-spacing: 0.32px;text-transform: uppercase;">instagram</p>
+                </div>
+                <hr>
+            </div>
+        </footer>
+
+            
+
+    </div>
+    <script src="bootstrap.bundle.min.js"></script>
+    <script src="jquery.min.js"></script>
+    <script src="java.js"></script>
+
+    
+</body>
+</html>
